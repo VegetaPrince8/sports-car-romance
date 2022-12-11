@@ -1,0 +1,477 @@
+@charset "utf-8";
+/*  全体  */
+.all-entire {
+    width: 100%;
+    height: 100vh;
+}
+.center-appear {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+} 
+.ele-center {
+    transform: translate(0, -50%);
+}
+.ignition {
+    width: 100%;
+    height: 300px;
+}
+
+.first-proxy {
+    font-size: 4.3vw;
+    letter-spacing: .7rem;
+    font-weight: 600;
+}
+.motor-sports {
+    letter-spacing: 1rem;
+}
+.deputy-proxy {
+    font-size: 3.3vw;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2.3vw;
+}
+.racing-car-name {
+    font-size: 1.2rem;
+}
+.charm-title {
+    font-size: 2rem;
+}
+.thin {
+    font-weight: 100;
+}
+
+
+
+
+body {
+    color: #fff;
+	/*font-weight: 500;*/
+	font-size: 16px;
+	line-height: 1.7;
+	letter-spacing: 0.1em;
+	width: 100%;
+	line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type:none;
+}
+a {
+	line-height: 1.7;
+	text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 30px;
+    height: 1px;
+    background: #fff; 
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: 0.4s;
+    opacity: initial;
+    opacity: 1;
+}
+a:hover::before {
+    transform: scale(1);
+}
+*/
+a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 0px;
+    border-bottom: solid 1px #fff;
+    transform-origin: left;
+    transition: 0.4s;
+}
+a:hover::before {
+    width: 30px;
+}
+img {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+header {
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+.video-area {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+}
+.video-area::before {
+    content: "";
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.video-area video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+
+.sports-explanation {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/*  js 
+
+
+
+
+
+*/
+
+.text-move span, .touring-move span, .sports-move span, .high-performance-move span, .type-move span {
+    margin : 0 5px;
+}
+.high-performance-move {
+    transform: translate(0, -50%);
+}
+.nav ul li a {
+    color: rgba(255,255,255,0.4);
+    transition-duration: .5s;
+}
+.nav ul .is-active a {
+    color: rgba(255,255,255,1);
+    transition-duration: .5s;
+}
+
+
+.nav {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+}
+.nav > ul li {
+    margin: 7px 0;
+    font-size: .5rem;
+}
+.nav-while {
+    padding: 0 155px 0 60px;
+}
+.priority {
+    z-index: 2;
+}
+.top-not-enough {
+    padding-top: 150px;
+}
+
+
+
+
+
+/*  btn  */
+.toggle-btn {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:857px) {
+    .name-height {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:939px) {
+    .first-proxy {
+        letter-spacing: .4rem;
+    }
+    .deputy-proxy {
+        font-size: 1.85rem;
+    }
+    .explanatory-text {
+        font-size: .9rem;
+    }
+    .sports-explanation {
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .nav-while {
+        padding: 0 130px 0 30px;
+    }    
+    header {
+        letter-spacing: .15rem;
+    }
+    .first-proxy {
+        letter-spacing: .25rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .detail {
+        font-size: .8rem;
+    }
+    .name-height {
+        height: inherit;
+    }
+    .aaa {
+        object-fit: cover;
+    }
+    .nav > ul li {
+        margin: 4px 0;
+    }
+    .text-move span, .touring-move span, .sports-move span, .high-performance-move span, .type-move span {
+        margin : 0 3px;
+    }
+    .motor-sports {
+        letter-spacing: .7rem;
+    }
+    .all-entire-lot {
+        width: 100%;
+        height: 100%;
+    }
+    .vertical-gap {
+        margin-bottom: 300px;
+    }
+    .not-enough {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    .sentence-space {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .top-not-enough {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width:670px) {
+    .first-proxy {
+        font-size: 2rem;
+    }
+    .deputy-proxy {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .sports-explanation {
+        font-size: 1.2rem;
+    }
+
+
+    /*  横のメニュー削除  */
+    .nav {
+        display: none;
+    }    
+    .nav-while {
+        padding: 0 30px;
+    }
+    .mobile-font {
+        font-size: .8rem;
+    }
+    .mobile-font img {
+        width: 45px;
+    }
+
+
+
+
+
+    /*  btn  */
+    .contact {
+        display: none !important;
+    }
+    .toggle-btn {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 30px;
+        height: 30px;
+        transition: all .5s;
+        cursor: pointer;
+        z-index: 3;
+    }
+    .toggle-btn span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px;
+        transition: all .5s;
+    }
+    .toggle-btn span:nth-child(1) {
+        top: 4px;
+    }
+    .toggle-btn span:nth-child(2) {
+        top: 14px;
+    }
+    .toggle-btn span:nth-child(3) {
+        bottom: 4px;
+    }    
+    .open .toggle-btn span:nth-child(1) {
+        -webkit-transform: translateY(10px) rotate(-45deg);
+        transform: translateY(10px) rotate(-45deg);
+    }
+    .open .toggle-btn span:nth-child(2) {
+        left: -200%;
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-animation: active-btn06-bar02 .8s forwards;
+        animation: active-btn06-bar02 .8s forwards;
+    }
+    .open .toggle-btn span:nth-child(3) {
+        -webkit-transform: translateY(-10px) rotate(45deg);
+        transform: translateY(-10px) rotate(45deg);
+    }
+    @-webkit-keyframes active-btn06-bar02 {
+        100% {
+            height: 0;
+        }
+    }
+    @keyframes active-btn06-bar02 {
+        100% {
+            height: 0;
+        }
+    }
+
+    #mask {
+        display: none;
+        transition: all .5s;
+    }
+    .open #mask {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .ground {
+        background-color: black;
+    }
+    .inner ul {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        z-index: 2;
+    }
+    .inner ul li {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:577px) {
+    .first-proxy {
+        font-size: 1.8rem;
+    }
+    .deputy-proxy {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .sports-explanation {
+        font-size: 1.1rem;
+    }
+    .text-move span, .touring-move span, .sports-move span, .high-performance-move span, .type-move span {
+        margin : 0 1.3px;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    .first-proxy {
+        font-size: 1.4rem;
+        letter-spacing: .13rem;
+    }
+    .deputy-proxy {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .sports-explanation {
+        font-size: 1.1rem;
+    }
+    .top-not-enough {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+@media screen and (max-width:330px) {
+    .part-block {
+        display: inline !important;
+    }
+}
+
